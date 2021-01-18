@@ -14,7 +14,7 @@
 
 1. Setup the Ansible Inventory File.
 	- In this case, mine inventory file is : aws_web.yml ( This inventory in yml format, you can follow the .ini format as well.)
-	- READ MORE - [How to create Ansible Inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
+	- READ MORE - [How to create Ansible Inventory?](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
 
 	```
 	$ cat aws_web.yml
