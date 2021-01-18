@@ -82,9 +82,11 @@
 	- Now our new full command will be `$ allowip "ip=XX.XX.XX.XX name=NAME"`
 
 *** Let's test it now - 
+
 ```
 $ allowip "ip=11.22.33.44 name=JerryHome"
 ```	
+- This command will whitelist your given ip at all the servers, which you've in Inventory File.
 - Here `"ip=11.22.33.44 name=JerryHome"` is the `$1` Value, which we defined above in `~/.bash_aliases` & `csf_allow_ip.yml`.
 
 #### - I hope this small thing will be helpfull for anyone, who's planing something smiliar. 

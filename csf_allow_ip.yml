@@ -1,0 +1,8 @@
+---
+- name: Whitelisting Ip on AWS_WEB Host Group.
+hosts: aws_web
+gather_facts: false
+become: yes
+tasks:
+   - name: Whitelist IP
+     shell: csf -ta {{ ip }} 43200 {{ name }}
