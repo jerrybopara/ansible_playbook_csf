@@ -13,7 +13,7 @@
 ## *Let's Begin -*
 
 1. Setup the Ansible Inventory File.
-	- In this case, mine inventory file is : aws_web.yml
+	- In this case, mine inventory file is : aws_web.yml ( This inventory in yml format, you can follow the .ini format as well.)
 	```
 	$ cat aws_web.yml
 	---
