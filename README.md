@@ -38,4 +38,18 @@
 	       # ansible_port: 22
 	       host_key_checking: False
 
-	``` 
+2. Update `/etc/hosts` file with above mentioned remote nodes.
+	- I've added my test servers Ip in my `/etc/hosts` file, so that i can access/call them with the name.
+	- Note - do not forget to replace - XX.XX.XX.XX with your server's Ip's.
+	```
+	$ cat /etc/hosts
+	127.0.0.1 localhost
+	# all AWS Web Hosts & DB Host
+	XX.XX.XX.XX apache1
+	XX.XX.XX.XX apache2
+	XX.XX.XX.XX dbserver1
+
+
+3. 
+
+	
