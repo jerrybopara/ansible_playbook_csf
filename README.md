@@ -25,13 +25,11 @@
 	      hosts:
 	        JerryLocal: # My local ansible control node.
 	          ansible_connection: local
-
 	    aws_web: # All Servers
 	      hosts:
 	        apache1:  # My 2nd Web Server - XX.XX.XX.XX
 	        apache2:  # My 2nd Web Server - XX.XX.XX.XX
 	        dbserver1: # My DB Server - XX.XX.XX.XX  
-	
 	      vars:
 	       ansible_ssh_private_key_file: /home/USER/PATH_OF_SSH_KEY_FILE
 	       ansible_user: centos
@@ -39,6 +37,8 @@
 	       ansible_become_user: root
 	       # ansible_port: 22
 	       host_key_checking: False
+	...
+	```       
 
 2. Update `/etc/hosts` file with above mentioned remote nodes.
 	- I've added my test servers Ip in my `/etc/hosts` file, so that i can access/call them with the name.
@@ -50,7 +50,7 @@
 	XX.XX.XX.XX apache1
 	XX.XX.XX.XX apache2
 	XX.XX.XX.XX dbserver1
-
+	```
 
 3. 
 
