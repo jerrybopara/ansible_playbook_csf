@@ -69,5 +69,5 @@
 	- `43200` Seconds (12 hours) for the ip will be remain whitelisted. 
 
 	- *READ MODE - [CSF configserver.com](https://www.configserver.com/cp/csf.html)*
-
+	- *CSF Commands - [Some Usefull Commands.](https://www.hostdime.com/kb/hd/command-line/useful-csf-ssh-command-line-commands-csf-cheat-sheet)*
 	
