@@ -52,6 +52,20 @@
 	XX.XX.XX.XX dbserver1
 	```
 
-3. 
+3. Now Let's Create the Ansible Playbook which will execute the csf command on remote Nodes.
+	```
+	---
+	- name: Whitelisting Ip on AWS_WEB Host Group.
+  	hosts: aws_web
+  	gather_facts: false
+  	become: yes
+  	tasks:
+       - name: Whitelist IP
+         shell: csf -ta {{ ip }} 43200 {{ name }}
+	```	
+	- Here I'm using ansbile `shell` module to execute `CSF` command on remote servers.  
+	- `csf -ta` I'm Whitelisting IP addresses temporarily.
+	- `{{ ip }} & {{ name }}` are the variables, which we'll explain use later. 
+	- `43200` Seconds (12 hours) for the ip will be remain whitelisted. 
 
 	
