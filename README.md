@@ -54,6 +54,7 @@
 
 3. Now Let's Create the Ansible Playbook which will execute the csf command on remote Nodes.
 	```
+	$ cat csf_allow_ip.yml
 	---
 	- name: Whitelisting Ip on AWS_WEB Host Group.
   	hosts: aws_web
@@ -71,3 +72,19 @@
 	- *READ MODE - [CSF configserver.com](https://www.configserver.com/cp/csf.html)*
 	- *CSF Commands - [Some Usefull Commands.](https://www.hostdime.com/kb/hd/command-line/useful-csf-ssh-command-line-commands-csf-cheat-sheet)*
 	
+4. Create an alias at `.bash_aliases`. 
+	- I've created alias of `ansible-playbook`, So that i can execute more quickly & easily. 
+	```
+	$ cat ~/.bash_aliases
+	alias allowip='/usr/bin/ansible-playbook -i /home/PATH-OF-ANSIBLE-INVENTORY-File.yml /home/PATH-OF-ANSIBLE-PLAYBOK.yml -e $1'
+	``` 
+	- Define the proper path of Inventory File `aws_web.yml` & Playbook `csf_allow_ip.yml` Files.
+	- Now our new full command will be `$ allowip "ip=XX.XX.XX.XX name=NAME"`
+
+*** Let's test it now - 
+```
+$ allowip "ip=11.22.33.44 name=JerryHome"
+```	
+
+#### - I hope this small thing will be helpfull for anyone, who's planing something smiliar. 
+#### - THANK :)
