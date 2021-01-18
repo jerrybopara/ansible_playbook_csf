@@ -86,6 +86,6 @@
 $ allowip "ip=11.22.33.44 name=JerryHome"
 ```	
 - Here `"ip=11.22.33.44 name=JerryHome"` is the `$1` Value, which we defined above in `~/.bash_aliases` & `csf_allow_ip.yml`.
- 
+
 #### - I hope this small thing will be helpfull for anyone, who's planing something smiliar. 
-#### - THANK :)
+#### - THANK YOU :)
