@@ -68,4 +68,6 @@
 	- `{{ ip }} & {{ name }}` are the variables, which we'll explain use later. 
 	- `43200` Seconds (12 hours) for the ip will be remain whitelisted. 
 
+	- *[READ MODE About - CSF](https://www.configserver.com/cp/csf.html)*
+
 	
