@@ -1,5 +1,5 @@
 ---
-- name: Whitelisting Ip on AWS_WEB Host Group.
+- name: Whitelisting Ip on AWS_WEB Host Group .
 hosts: aws_web
 gather_facts: false
 become: yes
